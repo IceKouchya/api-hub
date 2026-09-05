@@ -1,0 +1,41 @@
+# Local runtime state
+data/
+logs/
+backups/
+tmp/
+runtime/
+
+# Local databases and SQLite sidecars
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Sensitive local operator records
+ops/channel-capabilities.local.md
+ops/*.local.md
+docs/*.local.md
+
+# Logs and operating-system noise
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Local editor state
+.vscode/
+.idea/
