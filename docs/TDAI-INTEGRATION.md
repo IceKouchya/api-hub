@@ -1,6 +1,6 @@
 # API Hub 的 Git 与 TDAI 接入
 
-- **状态：** 本地 Git 仓库已初始化（`main`，待创建首个提交）；目标公开远程为 `https://github.com/IceKouchya/api-hub.git`，但尚未建立或推送；CodeGraph 注册和 Wiki 导入待执行
+- **状态：** 本地 Git 基线已提交（`main`，`46206c4`）；目标公开远程为 `https://github.com/IceKouchya/api-hub.git`，等待 GitHub 创建仓库或推送授权；CodeGraph 注册和 Wiki 导入待执行
 - **适用范围：** `D:\Agent-Codex\projects\api-hub\`
 
 ## 目标
@@ -54,7 +54,7 @@ Obsidian 路径和 Git 仓库 `docs/` 指向同一份物理资料。禁止复制
 6. 创建首个审查后的提交并推送。
 7. 验证 `origin`、远程默认分支、远程文件清单与本地工作树干净状态。
 
-目标远程已确定为 `https://github.com/IceKouchya/api-hub.git`。只有在本机获得 `IceKouchya` 的 GitHub 创建仓库或推送授权后，才可创建、关联与推送该公开仓库。
+目标远程已确定为 `https://github.com/IceKouchya/api-hub.git`，并已作为本地 `origin` 写入。GitHub 的公开接口当前返回 `404`，而本机 CLI 尚未登录；只有在本机获得 `IceKouchya` 的 GitHub 创建仓库或推送授权后，才可创建并推送该公开仓库。
 
 ## TDAI 接入不是一个动作
 
@@ -79,4 +79,4 @@ Wiki 导入需要单独的明确授权：索引流程会把选定的红线审查
 
 ## 当前下一步
 
-执行 [000-establish-public-repository.md](tickets/000-establish-public-repository.md)，在修确认远程目标后完成公开 Git 基线；随后再决定是否单独授权 CodeGraph 注册和 Wiki 导入。
+完成 GitHub 登录或创建仓库授权后，执行 [000-establish-public-repository.md](tickets/000-establish-public-repository.md) 中的推送与远程复核；远程仓库可访问后注册 CodeGraph。Wiki 导入仍需单独授权。
