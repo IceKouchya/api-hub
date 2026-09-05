@@ -1,9 +1,9 @@
 # 000：建立公共 Git 仓库与 TDAI 接入基线
 
-- **状态：** `local-docs-committed; origin-configured; blocked-by-github-authentication`
-- **目标远程：** `https://github.com/IceKouchya/api-hub.git`，公开，默认分支 `main`
-- **依赖：** GitHub 账户对 `IceKouchya` 的有效创建仓库或推送授权
-- **后续解锁：** 001 部署 New API 基线；后续 CodeGraph 注册
+- **状态：** `completed; public-main-published; codegraph-ready; wiki-not-authorized`
+- **目标远程：** `https://github.com/IceKouchya/api-hub.git`，公开，默认分支 `main`；已发布
+- **依赖：** 无；公开远程与 CodeGraph 基线已完成
+- **后续解锁：** 001 部署 New API 基线；在 001 产生源码后重新同步 CodeGraph
 - **执行角色：** 独立仓库维护窗口
 
 ## 目标
@@ -57,17 +57,17 @@
 
 ## 实施步骤
 
-1. 获取修确认的精确远程目标与公开边界。
-2. 在 `projects/api-hub` 内检查项目资料、`.gitignore`、候选文件和任何历史遗留；确认 Vault 入口仍指向 `docs/`。
-3. 运行敏感信息扫描，覆盖常见 API Key、Token、密码、私钥、数据库和运行目录模式；人工阅读每个首次提交文件。
-4. 在项目目录初始化 Git 并设置默认分支 `main`。若已初始化，读取当前状态，不重建仓库。
-5. 仅在项目本地配置 Git `user.name` 与 `user.email`，不写全局配置。
-6. 暂存经审查的文件，复查 `git diff --cached` 和 `git status`。
-7. 创建首个提交；提交信息应说明 API Hub 项目基线，不包含敏感运行细节。
-8. 创建或关联修已确认的远程仓库，设置 `origin`，推送 `main`。
-9. 重新读取远程文件清单、仓库可见性、默认分支和本地 `origin`；确认工作树干净。
-10. 如修已单独授权 CodeGraph 注册，使用批准的远程 URL 注册并等待状态为 `ready`，记录脱敏索引结果和 `sync_error`。
-11. 如修已单独授权 Wiki 外发，先列出要导入的脱敏 Markdown，逐项确认后才创建、写入和触发索引。
+1. 已获取并使用确认的公开远程目标与公开边界。
+2. 已检查项目资料、`.gitignore`、候选文件和历史遗留，并确认 Vault 入口仍指向 `docs/`。
+3. 已运行敏感信息扫描并阅读公开提交内容，未发现真实凭据或本机运行数据。
+4. 已在项目目录使用默认分支 `main` 建立 Git 历史。
+5. 已仅在项目本地配置 Git 作者身份，未修改全局身份。
+6. 已审查暂存内容、提交差异和工作树。
+7. 已创建 API Hub 项目基线提交。
+8. 已关联确认的公开远程并推送 `main`。
+9. 已复核远程文件清单、公开可见性、默认分支和 `origin`。
+10. 已使用确认的远程 URL 注册 CodeGraph，触发同步并确认 `ready`、`sync_error` 为空；因仓库当前没有源码，索引统计为零。
+11. Wiki 外发未授权，因此未触发 Wiki 导入。
 
 ## 验收标准
 

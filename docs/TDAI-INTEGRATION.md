@@ -1,6 +1,6 @@
 # API Hub 的 Git 与 TDAI 接入
 
-- **状态：** 本地 `main` 已建立脱敏文档历史；目标公开远程 `https://github.com/IceKouchya/api-hub.git` 已配置为本地 `origin`，等待 GitHub 创建仓库或推送授权；CodeGraph 注册和 Wiki 导入待执行
+- **状态：** 公开远程 `https://github.com/IceKouchya/api-hub.git` 已发布，默认分支为 `main`；CodeGraph `cg-tft0r2xw` 已完成同步，状态为 `ready` 且 `sync_error` 为空。仓库当前仅含 Markdown 与 Canvas，故 CodeGraph 统计为 `0` 个源码文件、`0` 个符号节点；Wiki 未导入。
 - **适用范围：** `D:\Agent-Codex\projects\api-hub\`
 
 ## 目标
@@ -54,7 +54,7 @@ Obsidian 路径和 Git 仓库 `docs/` 指向同一份物理资料。禁止复制
 6. 创建首个审查后的提交并推送。
 7. 验证 `origin`、远程默认分支、远程文件清单与本地工作树干净状态。
 
-目标远程已确定为 `https://github.com/IceKouchya/api-hub.git`，并已作为本地 `origin` 写入。GitHub 的公开接口当前返回 `404`，而本机 CLI 尚未登录；只有在本机获得 `IceKouchya` 的 GitHub 创建仓库或推送授权后，才可创建并推送该公开仓库。
+目标远程为 `https://github.com/IceKouchya/api-hub.git`，已公开发布并使用 `main` 作为默认分支。首次发布内容仅包含脱敏文档与 Canvas；本机运行数据、密钥和局域网细节仍被 `.gitignore` 排除。
 
 ## TDAI 接入不是一个动作
 
@@ -64,10 +64,10 @@ CodeGraph 需要可访问的远程仓库 URL。公共 Git 仓库建立后，还�
 
 验收：
 
-1. 使用批准的 `repo_url`、分支和仓库名创建 CodeGraph 记录。
-2. 等待状态达到 `ready`。
-3. 确认 `sync_error` 为空，并检查索引的文件、节点和边计数。
-4. 在后续提交后按 TDAI 支持的同步机制重新索引或更新。
+1. 已使用批准的 `repo_url`、分支和仓库名创建 CodeGraph 记录 `cg-tft0r2xw`。
+2. 已触发同步并确认状态为 `ready`。
+3. 已确认 `sync_error` 为空；当前统计为 `0` 个文件、`0` 个节点、`0` 条边，因为该仓库尚无可被 CodeGraph 解析的源码。
+4. 在执行票 `001` 添加 Compose、脚本或测试等源码后，重新同步并验证索引统计不再为零。
 
 ### Wiki
 
@@ -79,4 +79,4 @@ Wiki 导入需要单独的明确授权：索引流程会把选定的红线审查
 
 ## 当前下一步
 
-完成 GitHub 登录或创建仓库授权后，执行 [000-establish-public-repository.md](tickets/000-establish-public-repository.md) 中的推送与远程复核；远程仓库可访问后注册 CodeGraph。Wiki 导入仍需单独授权。
+[000-establish-public-repository.md](tickets/000-establish-public-repository.md) 已完成。独立执行窗口从 [001-deploy-new-api.md](tickets/001-deploy-new-api.md) 开始；该票产生可索引源码后，重新同步 CodeGraph。Wiki 导入仍需单独授权。

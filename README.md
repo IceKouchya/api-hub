@@ -2,7 +2,7 @@
 
 个人局域网多上游大模型网关项目。运行时计划使用 New API，向自有设备提供统一 OpenAI 兼容入口、统一 Token、模型路由和渠道故障切换。
 
-**当前状态：** 已完成项目设计、能力矩阵与执行票，并已在本地 `main` 建立脱敏文档历史；目标公共远程为 `https://github.com/IceKouchya/api-hub.git`，已配置为本地 `origin`，等待 GitHub 创建仓库或推送授权；尚未部署容器、尚未配置真实上游凭据、尚未创建客户端 Token。
+**当前状态：** 已完成项目设计、能力矩阵与执行票；公开仓库 [IceKouchya/api-hub](https://github.com/IceKouchya/api-hub) 已发布，默认分支为 `main`。TDAI CodeGraph 已注册并完成同步，但仓库当前仅含 Markdown 与 Canvas，因此没有可索引的源码文件。尚未部署容器、尚未配置真实上游凭据、尚未创建客户端 Token。
 
 ## 项目资料
 
@@ -35,8 +35,8 @@
 
 ## TDAI
 
-公共 Git 仓库是 TDAI CodeGraph 的前置条件之一，但推送代码本身不会自动完成 TDAI 接入。后续必须单独完成 CodeGraph 仓库注册、索引状态验证；如需将项目文档导入 TDAI Wiki，还要先审查脱敏范围并获得针对索引外发的明确授权。完整流程见 [docs/TDAI-INTEGRATION.md](docs/TDAI-INTEGRATION.md)。
+公共 Git 仓库是 TDAI CodeGraph 的前置条件之一，但推送内容不会自动完成 TDAI 接入。CodeGraph 已完成仓库注册与同步；后续新增可解析源码后仍需重新验证索引状态。如需将项目文档导入 TDAI Wiki，还要先审查脱敏范围并获得针对索引外发的明确授权。完整流程见 [docs/TDAI-INTEGRATION.md](docs/TDAI-INTEGRATION.md)。
 
 ## 下一步
 
-先执行 [000：建立公共 Git 仓库与 TDAI 接入基线](docs/tickets/000-establish-public-repository.md)，再开始 New API 部署票。
+公共仓库与 CodeGraph 基线已完成。独立执行窗口从 [001：部署 New API 基线](docs/tickets/001-deploy-new-api.md) 开始。
