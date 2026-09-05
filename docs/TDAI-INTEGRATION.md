@@ -1,6 +1,6 @@
 # API Hub 的 Git 与 TDAI 接入
 
-- **状态：** 公开远程 `https://github.com/IceKouchya/api-hub.git` 已发布，默认分支为 `main`；CodeGraph `cg-tft0r2xw` 已完成同步，状态为 `ready` 且 `sync_error` 为空。仓库当前仅含 Markdown 与 Canvas，故 CodeGraph 统计为 `0` 个源码文件、`0` 个符号节点；Wiki 未导入。
+- **状态：** 公开远程 `https://github.com/IceKouchya/api-hub.git` 已发布，默认分支为 `main`；CodeGraph `cg-tft0r2xw` 已完成同步，状态为 `ready` 且 `sync_error` 为空。当前索引 `scripts/publish-github-api.mjs`，统计为 `1` 个源码文件、`12` 个符号节点、`27` 条边；Wiki 未导入。
 - **适用范围：** `D:\Agent-Codex\projects\api-hub\`
 
 ## 目标
@@ -66,8 +66,8 @@ CodeGraph 需要可访问的远程仓库 URL。公共 Git 仓库建立后，还�
 
 1. 已使用批准的 `repo_url`、分支和仓库名创建 CodeGraph 记录 `cg-tft0r2xw`。
 2. 已触发同步并确认状态为 `ready`。
-3. 已确认 `sync_error` 为空；当前统计为 `0` 个文件、`0` 个节点、`0` 条边，因为该仓库尚无可被 CodeGraph 解析的源码。
-4. 在执行票 `001` 添加 Compose、脚本或测试等源码后，重新同步并验证索引统计不再为零。
+3. 已确认 `sync_error` 为空；当前统计为 `1` 个文件、`12` 个节点、`27` 条边，索引对象为发布脚本 `scripts/publish-github-api.mjs`。
+4. 在执行票 `001` 添加 Compose 或测试等运行资产后，重新同步并复核索引统计。
 
 ### Wiki
 

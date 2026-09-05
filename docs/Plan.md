@@ -21,7 +21,7 @@
 
 ## 执行顺序
 
-1. [000 建立公共 Git 仓库与 TDAI 接入基线](tickets/000-establish-public-repository.md) 已完成：公开 `main` 已发布，CodeGraph 已注册；仓库当前没有可索引源码，待 001 产生运行配置后重新同步。
+1. [000 建立公共 Git 仓库与 TDAI 接入基线](tickets/000-establish-public-repository.md) 已完成：公开 `main` 已发布，CodeGraph 已注册并索引发布脚本；001 产生运行配置后重新同步。
 2. 独立执行窗口从 [001 部署 New API](tickets/001-deploy-new-api.md) 开始。
 3. 环境和部署基线通过后执行 [002 配置上游渠道](tickets/002-configure-upstream-channels.md)，在渠道级完成文本、流式、工具、视觉、推理、Embedding 和实际协议路径的能力记录。
 4. 渠道验证后执行 [003 创建统一 Token](tickets/003-create-unified-token.md)。

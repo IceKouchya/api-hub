@@ -2,7 +2,7 @@
 
 个人局域网多上游大模型网关项目。运行时计划使用 New API，向自有设备提供统一 OpenAI 兼容入口、统一 Token、模型路由和渠道故障切换。
 
-**当前状态：** 已完成项目设计、能力矩阵与执行票；公开仓库 [IceKouchya/api-hub](https://github.com/IceKouchya/api-hub) 已发布，默认分支为 `main`。TDAI CodeGraph 已注册并完成同步，但仓库当前仅含 Markdown 与 Canvas，因此没有可索引的源码文件。尚未部署容器、尚未配置真实上游凭据、尚未创建客户端 Token。
+**当前状态：** 已完成项目设计、能力矩阵与执行票；公开仓库 [IceKouchya/api-hub](https://github.com/IceKouchya/api-hub) 已发布，默认分支为 `main`。TDAI CodeGraph 已注册并完成同步，当前索引 `scripts/publish-github-api.mjs` 中的 1 个 JavaScript 文件、12 个符号节点和 27 条边。尚未部署容器、尚未配置真实上游凭据、尚未创建客户端 Token。
 
 ## 项目资料
 

@@ -3,7 +3,7 @@
 - **状态：** `completed; public-main-published; codegraph-ready; wiki-not-authorized`
 - **目标远程：** `https://github.com/IceKouchya/api-hub.git`，公开，默认分支 `main`；已发布
 - **依赖：** 无；公开远程与 CodeGraph 基线已完成
-- **后续解锁：** 001 部署 New API 基线；在 001 产生源码后重新同步 CodeGraph
+- **后续解锁：** 001 部署 New API 基线；在 001 产生运行配置后重新同步 CodeGraph
 - **执行角色：** 独立仓库维护窗口
 
 ## 目标
