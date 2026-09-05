@@ -1,6 +1,6 @@
 # API Hub 的 Git 与 TDAI 接入
 
-- **状态：** 本地 Git 基线已提交（`main`，`46206c4`）；目标公开远程为 `https://github.com/IceKouchya/api-hub.git`，等待 GitHub 创建仓库或推送授权；CodeGraph 注册和 Wiki 导入待执行
+- **状态：** 本地 Git 已有两次脱敏文档提交（`main`，当前 `f697405`）；目标公开远程 `https://github.com/IceKouchya/api-hub.git` 已配置为本地 `origin`，等待 GitHub 创建仓库或推送授权；CodeGraph 注册和 Wiki 导入待执行
 - **适用范围：** `D:\Agent-Codex\projects\api-hub\`
 
 ## 目标

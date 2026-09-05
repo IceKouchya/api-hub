@@ -1,6 +1,6 @@
 # 000：建立公共 Git 仓库与 TDAI 接入基线
 
-- **状态：** `local-baseline-committed; origin-configured; blocked-by-github-authentication`
+- **状态：** `local-docs-committed; origin-configured; blocked-by-github-authentication`
 - **目标远程：** `https://github.com/IceKouchya/api-hub.git`，公开，默认分支 `main`
 - **依赖：** GitHub 账户对 `IceKouchya` 的有效创建仓库或推送授权
 - **后续解锁：** 001 部署 New API 基线；后续 CodeGraph 注册
